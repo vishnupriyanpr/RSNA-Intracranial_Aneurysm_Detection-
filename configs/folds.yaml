@@ -1,0 +1,11 @@
+# Optionally stratify by site/scanner if metadata available
+- fold: 0
+  valid_ratio: 0.2
+- fold: 1
+  valid_ratio: 0.2
+- fold: 2
+  valid_ratio: 0.2
+- fold: 3
+  valid_ratio: 0.2
+- fold: 4
+  valid_ratio: 0.2

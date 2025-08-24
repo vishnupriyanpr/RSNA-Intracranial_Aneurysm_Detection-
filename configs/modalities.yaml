@@ -1,0 +1,13 @@
+CTA:
+  spacing: [1.0, 1.0, 1.0]
+  window: [-200, 700]
+  normalize: "window_minmax"
+MRA:
+  spacing: [1.0, 1.0, 1.2]
+  normalize: "zscore"
+MRI T1:
+  spacing: [1.2, 1.2, 1.5]
+  normalize: "zscore"
+MRI T2:
+  spacing: [1.2, 1.2, 1.5]
+  normalize: "zscore"

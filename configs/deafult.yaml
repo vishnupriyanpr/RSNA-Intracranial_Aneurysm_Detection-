@@ -1,0 +1,49 @@
+seed: 1337
+num_folds: 5
+cv_group_col: "SeriesInstanceUID"
+
+targets:
+  - "Aneurysm Present"
+  - "Left Infraclinoid Internal Carotid Artery"
+  - "Right Infraclinoid Internal Carotid Artery"
+  - "Left Supraclinoid Internal Carotid Artery"
+  - "Right Supraclinoid Internal Carotid Artery"
+  - "Left M1 Segment Middle Cerebral Artery"
+  - "Right M1 Segment Middle Cerebral Artery"
+  - "Anterior Communicating Artery"
+  - "Left A1 Segment Anterior Cerebral Artery"
+  - "Right A1 Segment Anterior Cerebral Artery"
+  - "Left P1 Segment Posterior Cerebral Artery"
+  - "Right P1 Segment Posterior Cerebral Artery"
+  - "Basilar Artery"
+  - "Posterior Communicating Artery"
+
+weights:
+  "Aneurysm Present": 13.0
+  default: 1.0
+
+modalities_priority: ["CTA", "MRA", "MRI T1", "MRI T2"]
+
+spacing:
+  CTA: [1.0, 1.0, 1.0]
+  MRA: [1.0, 1.0, 1.2]
+  MRI: [1.2, 1.2, 1.5]
+
+windowing:
+  CTA: [-200, 700]
+
+train:
+  epochs: 30
+  batch_size: 1
+  grad_accum_steps: 8
+  lr: 2.0e-4
+  weight_decay: 1.0e-2
+  optimizer: "adamw"
+  scheduler: "cosine"
+  mixed_precision: true
+  ema: true
+  presence_loss_weight: 2.0
+
+inference:
+  tta: 3
+  slide_overlap: 0.25
