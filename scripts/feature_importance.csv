@@ -1,0 +1,20 @@
+feature,importance
+aneurysm_count,0.4500364200055505
+location_diversity,0.39556305656363666
+Anterior Communicating Artery,0.046083720274932585
+Left Supraclinoid Internal Carotid Artery,0.028117132474200217
+Right Middle Cerebral Artery,0.026142486850740415
+Right Supraclinoid Internal Carotid Artery,0.01905176847497626
+Left Middle Cerebral Artery,0.012030178309349828
+Other Posterior Circulation,0.007150781902572384
+Right Infraclinoid Internal Carotid Artery,0.004221388347312042
+Basilar Tip,0.0027661740404873133
+Right Posterior Communicating Artery,0.002736573559867884
+Modality_encoded,0.0022282319822169846
+Left Posterior Communicating Artery,0.0019473888334044604
+Left Infraclinoid Internal Carotid Artery,0.0012840089265634875
+Right Anterior Cerebral Artery,0.0006406894541889029
+PatientSex_encoded,0.0
+PatientAge,0.0
+Left Anterior Cerebral Artery,0.0
+PatientAge_normalized,0.0
